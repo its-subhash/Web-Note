@@ -1,0 +1,19 @@
+{
+    "manifest_version":3,
+    "name":"Web Note",
+    "version":"0.0.2",
+    "description":"A chrome extension to take notes on web pages",
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon":"media/cloud-notepad.256x244.png"
+    },
+    "permissions":[
+        "tabs",
+        "activeTab",
+        "storage"
+    ],
+    "background":{
+        "service_worker":"background.js"
+    },
+    "options_page": "dashboard.html"
+}
